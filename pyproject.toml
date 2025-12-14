@@ -13,7 +13,7 @@ dependencies = [
     "openmeteo-requests>=1.7.4",
     "pandas>=2.3.3",
     "pydantic>=2.12.5",
-    "pydantic-config>=0.3.0",
+    "pydantic-settings>=2.12.0",
     "requests-cache>=1.2.1",
     "torch>=2.9.1",
 ]

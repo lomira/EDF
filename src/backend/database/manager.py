@@ -1,10 +1,11 @@
 import duckdb
 from pathlib import Path
+from src.backend.config import settings
 
 
 class DatabaseManager:
-    def __init__(self, db_path: str = "data/edf.duckdb"):
-        self.db_path = db_path
+    def __init__(self, db_path: str | None = None):
+        self.db_path = db_path or settings.db_path
         self._ensure_data_dir()
         self.conn = duckdb.connect(self.db_path)
         self._init_schema()

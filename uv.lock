@@ -540,7 +540,7 @@ dependencies = [
     { name = "openmeteo-requests" },
     { name = "pandas" },
     { name = "pydantic" },
-    { name = "pydantic-config" },
+    { name = "pydantic-settings" },
     { name = "requests-cache" },
     { name = "torch" },
 ]
@@ -565,7 +565,7 @@ requires-dist = [
     { name = "openmeteo-requests", specifier = ">=1.7.4" },
     { name = "pandas", specifier = ">=2.3.3" },
     { name = "pydantic", specifier = ">=2.12.5" },
-    { name = "pydantic-config", specifier = ">=0.3.0" },
+    { name = "pydantic-settings", specifier = ">=2.12.0" },
     { name = "requests-cache", specifier = ">=1.2.1" },
     { name = "torch", specifier = ">=2.9.1" },
 ]
@@ -2026,18 +2026,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/69/44/36f1a6e523abc58ae5f928898e4aca2e0ea509b5aa6f6f392a5d882be928/pydantic-2.12.5.tar.gz", hash = "sha256:4d351024c75c0f085a9febbb665ce8c0c6ec5d30e903bdb6394b7ede26aebb49", size = 821591, upload-time = "2025-11-26T15:11:46.471Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/5a/87/b70ad306ebb6f9b585f114d0ac2137d792b48be34d732d60e597c2f8465a/pydantic-2.12.5-py3-none-any.whl", hash = "sha256:e561593fccf61e8a20fc46dfc2dfe075b8be7d0188df33f221ad1f0139180f9d", size = 463580, upload-time = "2025-11-26T15:11:44.605Z" },
-]
-
-[[package]]
-name = "pydantic-config"
-version = "0.3.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "pydantic-settings" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/12/ff/1f38c845927142946d4c7b4a886b9ff3d7fde28e1d4d2c30dd624cd48e8a/pydantic-config-0.3.0.tar.gz", hash = "sha256:6b59e4d2f2072d0e6a443fe3dbbb012bba04e972e5176a617540e33d0b1ff39c", size = 8147, upload-time = "2023-12-06T15:57:45.512Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/72/1e/104e05a072cc80149c95d127606f88bcb4114e2238be12511d2499e69bd3/pydantic_config-0.3.0-py3-none-any.whl", hash = "sha256:572b737a527a372374e901169c6ac06d2f2766fca6ab12efaaf7046d1c504205", size = 6742, upload-time = "2023-12-06T15:57:44.096Z" },
 ]
 
 [[package]]
