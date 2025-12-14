@@ -8,6 +8,7 @@ dependencies = [
     "darts>=0.39.0",
     "diskcache>=5.6.3",
     "duckdb>=1.4.3",
+    "fastapi>=0.124.4",
     "nicegui>=3.4.0",
     "openmeteo-requests>=1.7.4",
     "pandas>=2.3.3",
