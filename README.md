@@ -25,16 +25,16 @@ The application uses a **FastAPI** core to serve both the backend logic and the 
 *   **Backend (Service Layer):** Handles data processing, DuckDB interactions, and Darts model execution. It is stateless regarding the UI.
 
 ### 2.2 Tech Stack
-| Component | Technology | Role |
-| :--- | :--- | :--- |
-| **Language** | Python 3.12 | Core Runtime. |
-| **Frontend** | **NiceGUI** | Web-based UI framework (running locally on `localhost`). |
-| **Forecasting** | **Darts** / PyTorch | Unified API for statistical (ARIMA) and Deep Learning (Transformer) models. |
-| **Database** | **DuckDB** | Primary persistent storage ("Source of Truth") for aligned time-series data. |
-| **Data Proc** | **Pandas** | In-memory manipulation for training data preparation. |
-| **Caching** | **Requests-Cache** | Persistence for External APIs (OpenMeteo) to prevent rate limits. |
-| **Caching** | **DiskCache** | Local file caching for heavy intermediate calculations. |
-| **Async** | `asyncio` | Manages non-blocking UI during model training. |
+| Component       | Technology          | Role                                                                         |
+| :-------------- | :------------------ | :--------------------------------------------------------------------------- |
+| **Language**    | Python 3.12         | Core Runtime.                                                                |
+| **Frontend**    | **NiceGUI**         | Web-based UI framework (running locally on `localhost`).                     |
+| **Forecasting** | **Darts** / PyTorch | Unified API for statistical (ARIMA) and Deep Learning (Transformer) models.  |
+| **Database**    | **DuckDB**          | Primary persistent storage ("Source of Truth") for aligned time-series data. |
+| **Data Proc**   | **Pandas**          | In-memory manipulation for training data preparation.                        |
+| **Caching**     | **Requests-Cache**  | Persistence for External APIs (OpenMeteo) to prevent rate limits.            |
+| **Caching**     | **DiskCache**       | Local file caching for heavy intermediate calculations.                      |
+| **Async**       | `asyncio`           | Manages non-blocking UI during model training.                               |
 
 ### 2.3 Proposed Project Structure
 ```text
@@ -53,7 +53,6 @@ EDF_Project/
 │   │   └── main.py             # NiceGUI entry point
 │   │
 │   └── main_app.py             # Application Bootstrapper
-├── requirements.txt
 ├── pyproject.toml              # Managed by uv
 └── run.bat
 ```
